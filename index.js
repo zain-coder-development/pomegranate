@@ -9,5 +9,8 @@ bot.on("messageCreate", (msg) => {
     bot.createMessage(msg.channel.id, "Pong!");
     
   }
+  if(msg.content === "!pong") {
+    bot.createMessage(msg.channel.id, "ping!")
+  }
 });
 bot.connect();
